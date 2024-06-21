@@ -74,3 +74,37 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @layer utilities {
+    .wrapper {
+      @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+    }
+  
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+  
+    .flex-between {
+      @apply flex justify-between items-center;
+    }
+  
+    /* TYPOGRAPHY */
+    /* 64 */
+    .h1-bold {
+      @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
+    }
+  
+    /* 40 */
+    .h2-bold {
+      @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+    }
+  
+    .h2-medium {
+      @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+    }
+  
+    /* 36 */
+    .h3-bold {
+      @apply font-bold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+    }
+  }
